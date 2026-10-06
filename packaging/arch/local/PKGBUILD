@@ -1,0 +1,28 @@
+# Maintainer: William C. Canin
+pkgname=argvus-branding
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="ARGVUS branding assets: logo and wordmark"
+arch=('any')
+url="https://github.com/argvus/argvus-branding"
+license=('GPL-3.0-only')
+depends=()
+options=('!debug')
+source=("${pkgname}-${pkgver}.tar.gz")
+sha256sums=('SKIP')
+
+# shellcheck disable=SC1091
+_functions_file="${startdir:-$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)}/../common/functions.sh"
+. "$_functions_file"
+
+prepare() {
+  arch_normalize_source_tree
+}
+
+check() {
+  arch_check_branding_payload
+}
+
+package() {
+  arch_package_branding_payload
+}
