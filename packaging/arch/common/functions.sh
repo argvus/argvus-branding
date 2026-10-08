@@ -43,7 +43,7 @@ arch_package_branding_payload() {
 		"${pkgdir}/usr/share/argvus/svg/ARGVUS-logo.svg"
 	install -Dm644 "${source_root}/src/usr/share/argvus/svg/ARGVUS-wordmark.svg" \
 		"${pkgdir}/usr/share/argvus/svg/ARGVUS-wordmark.svg"
-	install -Dm644 "${source_root}/src/usr/share/argvus/svg/ARGVUS-wordmark.svg" \
+	install -Dm644 "${source_root}/src/usr/share/argvus/svg/ARGVUS-menu.svg" \
 		"${pkgdir}/usr/share/argvus/svg/ARGVUS-menu.svg"
 	install -Dm644 "${source_root}/LICENSE" \
 		"${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
