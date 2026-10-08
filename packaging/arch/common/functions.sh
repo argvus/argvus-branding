@@ -33,6 +33,7 @@ arch_check_branding_payload() {
 
 	test -f "${source_root}/src/usr/share/argvus/svg/ARGVUS-logo.svg"
 	test -f "${source_root}/src/usr/share/argvus/svg/ARGVUS-wordmark.svg"
+	test -f "${source_root}/src/usr/share/argvus/svg/ARGVUS-menu.svg"
 }
 
 arch_package_branding_payload() {
@@ -42,6 +43,8 @@ arch_package_branding_payload() {
 		"${pkgdir}/usr/share/argvus/svg/ARGVUS-logo.svg"
 	install -Dm644 "${source_root}/src/usr/share/argvus/svg/ARGVUS-wordmark.svg" \
 		"${pkgdir}/usr/share/argvus/svg/ARGVUS-wordmark.svg"
+	install -Dm644 "${source_root}/src/usr/share/argvus/svg/ARGVUS-wordmark.svg" \
+		"${pkgdir}/usr/share/argvus/svg/ARGVUS-menu.svg"
 	install -Dm644 "${source_root}/LICENSE" \
 		"${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
 }
