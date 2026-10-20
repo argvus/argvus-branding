@@ -5,7 +5,6 @@
 ```
 ├── Makefile
 ├── README.md
-├── CHANGELOG.md
 ├── LICENSE
 ├── packaging/
 │   └── arch/
