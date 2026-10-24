@@ -48,4 +48,4 @@ Installs the locally-built package via `pacman -U`.
 
 ## Contributing
 
-See CONTRIBUTING.md.
+See [CONTRIBUTING.md](https://github.com/argvus/.github/blob/main/CONTRIBUTING.md).
