@@ -1,6 +1,6 @@
 # Maintainer: William C. Canin
 pkgname=argvus-branding
-pkgver=0.1.0
+pkgver=0.0.0
 pkgrel=1
 pkgdesc="ARGVUS branding assets: logo and wordmark"
 arch=('any')
